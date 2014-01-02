@@ -1,4 +1,4 @@
-package dianpingCrawler2;
+package dianpingCrawler;
 
 import java.io.FileWriter;
 import java.io.IOException;
