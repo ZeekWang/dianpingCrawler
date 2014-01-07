@@ -19,6 +19,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+
 public class CrawlComment {
 	private static String fileName = "stores.csv"; 
 	private static String userAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31";
@@ -146,6 +147,8 @@ public class CrawlComment {
 
 }
 
+
+
 class Comment {
 	private String storeID;
 	private String commentID;
@@ -157,9 +160,12 @@ class Comment {
 	private String time;
 	private String rate;
 
+
+	
 	public Comment() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	@Override
 	public String toString() {
 		return commentID+","+storeID+","+userName+","+userID+","+rate+","+price+","
@@ -235,3 +241,4 @@ class Comment {
 	}
 
 }
+
