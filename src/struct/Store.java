@@ -8,14 +8,14 @@ public class Store {
 	private String address;
 	private String label;
 	private String feature;
-	private float price;
+	private int price;
 	private float comment1;
 	private float comment2;
 	private float comment3;
 	private int comment_count;
 	private float lng;
 	private float lat;
-	private int rate;
+	private float rate;
 	
 	public Store(String string) {
 		String[] strs = string.split(",");
@@ -26,13 +26,14 @@ public class Store {
 		address = strs[4];
 		label = strs[5];
 		feature = strs[6];
-		price = Float.parseFloat(strs[7]);
-		comment1 = Float.parseFloat(strs[8]);
-		comment2 = Float.parseFloat(strs[9]);
-		comment3 = Float.parseFloat(strs[10]);
-		comment_count = Integer.parseInt(strs[11]);
-		lng = Float.parseFloat(strs[12]);
-		lat = Float.parseFloat(strs[13]);
+		price = Integer.parseInt(strs[7]);
+		rate = Float.parseFloat(strs[8]);
+		comment1 = Float.parseFloat(strs[9]);
+		comment2 = Float.parseFloat(strs[10]);
+		comment3 = Float.parseFloat(strs[11]);
+		comment_count = Integer.parseInt(strs[12]);
+		lng = Float.parseFloat(strs[13]);
+		lat = Float.parseFloat(strs[14]);
 	}
 	
 	
@@ -86,10 +87,10 @@ public class Store {
 	public void setFeature(String feature) {
 		this.feature = feature;
 	}
-	public float getPrice() {
+	public int getPrice() {
 		return price;
 	}
-	public void setPrice(float price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 	public float getComment1() {
@@ -128,11 +129,7 @@ public class Store {
 	public void setLat(float lat) {
 		this.lat = lat;
 	}
-	public void setRate(int rate) {
+	public void setRate(float rate) {
 		this.rate = rate;
 	}
-	public int getRate() {
-		return rate;
-	}
-	
 }

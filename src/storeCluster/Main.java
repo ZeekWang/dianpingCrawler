@@ -8,8 +8,9 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		ReadData data = new ReadData();
 		System.out.println("read data finish");
-//		MatrixCalculate mc = new MatrixCalculate(data);
+		MatrixCalculate mc = new MatrixCalculate(data);
 //		MonthCount mc = new MonthCount(data);
-		CalculateStoreRate cs = new CalculateStoreRate(data);
+//		CalculateStoreRate cs = new CalculateStoreRate(data);
+//		CalculateAccordingUser cau = new CalculateAccordingUser(data);
 	}
 }

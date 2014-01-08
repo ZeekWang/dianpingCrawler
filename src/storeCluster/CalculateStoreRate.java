@@ -16,14 +16,13 @@ import struct.Store;
 public class CalculateStoreRate {
 	public CalculateStoreRate(ReadData data) throws IOException {
 
-		FileOutputStream fos = new FileOutputStream("stores_rate.csv");
+		FileOutputStream fos = new FileOutputStream("stores.csv");
 		OutputStreamWriter osw = new OutputStreamWriter(fos, "GBK");
 		BufferedWriter bw = new BufferedWriter(osw);
 
 		HashMap<String, ArrayList<Comment>> storeCommentMap = data.getStoreCommentMap();
 		ArrayList<Store> stores = data.getStores();
 		for (int i = 0; i < stores.size(); i++) {
-			
 			Store store = stores.get(i);
 			System.out.println(store.getId());
 			ArrayList<Comment> comments = storeCommentMap.get(store.getId());
@@ -45,6 +44,5 @@ public class CalculateStoreRate {
 			bw.flush();
 		}
 		bw.close();
-		
 	}
 }
