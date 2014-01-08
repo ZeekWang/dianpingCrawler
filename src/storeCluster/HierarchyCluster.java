@@ -37,7 +37,7 @@ public class HierarchyCluster {
 				}
 			}
 			//merge two vector.
-//			System.out.println("  " + minX + ", " + minY);
+			System.out.println(minDis + "  " + minX + ", " + minY);
 			merge(minX, minY);
 			clusterNum--;
 		}
